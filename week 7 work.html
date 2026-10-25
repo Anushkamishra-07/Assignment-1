@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODELAB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4f606f;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            
+        }
+        nav {
+            background-color: #0F172A;
+            color: #4dd551;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h2 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #639b5d;
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-decoration-color: #b4b35e95;
+        }
+        .btn {
+            background-color: #0e4ed9;
+            color: #d8bdbd;
+            border: none;
+            padding: 10px 20px;
+            cursor: grabbing;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ccdaec;
+            text-transform: uppercase;
+            text-decoration: dotted underline;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background-color: #19a67eb3;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(228, 187, 187, 0.899);
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 style="font-family: cursive; font-weight: bold;">CODELAB</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="btn">SIGN UP</button>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to CODELAB</h1>
+        <p><i>Learn to code and build amazing projects!</i></p>
+        <button class="btn">Get Started</button>
+    </section>
+    <section class="cards">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Learn the basics of HTML and start building web pages.</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Style your web pages with Cascading Style Sheets and make it beautiful.</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Learn to add interactivity and dynamic behavior to your web pages.</p>
+        </div>
+    </section>
+</body>
+</html>
