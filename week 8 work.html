@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Helvetica, Arial, sans-serif; background: #b8c2bd50; }
+  .layout {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    grid-template-areas:
+      "head head"
+      "side main"
+      "foot foot";
+    gap: 10px;
+    min-height: 90vh;
+    padding: 10px;
+  }
+  header { grid-area: head; background: #0a2f08; color: white; padding: 14px; border-radius: 8px; text-align: center; 
+           display: flex; align-items: center; justify-content: center; text-transform: uppercase; letter-spacing: 2px; text-shadow: 1px 1px 2px #d9d3d3; }
+  aside  { grid-area: side; background: #ebe7bb; padding: 14px; border-radius: 8px; }
+  main   { grid-area: main; }
+  footer { grid-area: foot; background: #144f2b; color: white; padding: 23px; text-align: center; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-transform: uppercase; letter-spacing: 2px; text-shadow: 1px 1px 2px #d9d3d3; }
+  aside li { margin: 12px 0 8px 38px; }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .item {
+    display: flex;
+    align-items: space-between;
+    gap: 23px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .icon { font-size: 28px; }
+  aside ul
+    {
+        list-style: none;
+        padding-left: 0;
+    }
+    aside li
+    {
+        padding: 5px;
+        margin-bottom: 2px;
+        background-color: #9f5353;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    aside li:hover
+    {
+        background-color: #6b2e2e;
+        content: "\f054";
+    }
+</style>
+</head>
+<body>
+  <div class="layout">
+    <header><h2>My Dashboard</h2></header>
+    <aside>
+      <h3>Menu</h3>
+      <UL>
+        <li>HOME</li>
+        <li>REPORTS</li>
+        <li>SETTINGS</li>
+      </UL>
+    </aside>
+    <main>
+      <div class="gallery">
+        <div class="item"><span class="icon">&#128100;</span><div><b>120</b><br>Users</div></div>
+        <div class="item"><span class="icon">&#128176;</span><div><b>Rs 45k</b><br>Sales</div></div>
+        <div class="item"><span class="icon">&#128230;</span><div><b>36</b><br>Orders</div></div>
+        <div class="item"><span class="icon">&#11088;</span><div><b>4.8</b><br>Rating</div></div>
+        <div class="item"><span class="icon">&#128172;</span><div><b>18</b><br>Messages</div></div>
+        <div class="item"><span class="icon">&#9989;</span><div><b>92%</b><br>Done</div></div>
+      </div>
+    </main>
+    <footer><i>Made with CSS Grid</i></footer>
+  </div>
+
+</body>
+</html
