@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELEASE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: cursive;
+            color: #333;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('travel.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        /*--------MOBILE FIRST DESIGN--------*/
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px;
+            background-color: rgba(51, 50, 50, 0.3);
+            gap: 8px;
+            color: white;
+        }
+        nav h2 {
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: underline;
+            margin: 8px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 16px;
+            background-color: transparent;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: gold;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            padding: 20px;
+            background-color: transparent;
+        }
+        .box {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #555;
+        }
+        /*--------TABLET(768 px and wider)--------*/
+        @media (min-width: 768px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 14px 32px;
+            }
+            nav {
+                padding: 14px 32px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        /*--------DESKTOP(1024 px and wider)--------*/
+        @media (min-width: 1024px) {
+            .features {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 40px 32px;
+                background-color: transparent;
+            }
+            .hero h1 {
+                font-size: 3rem;
+                color: white;
+                text-decoration: underline;
+                font-display: swap;
+            }
+            .hero p {
+                font-size: 1.5rem;
+                color: gold;
+            }
+            nav {
+                padding: 14px 32px;
+                color: white;
+                background-color: transparent;
+            }
+            nav a {
+                color: white;
+                margin-left: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>TRAVELEASE</h2>
+        <div>
+            <a href="#">HOME</a>
+            <a href="#">TRIPS</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Travelease</h1>
+        <p>Your gateway to unforgettable travel experiences.</p>
+    </section>
+
+    <section class="features">
+        <div class="box">
+            <h3>Explore Destinations</h3>
+            <p>Discover breathtaking destinations around the world.</p>
+        </div>
+        <div class="box">
+            <h3>Book Trips</h3>
+            <p>Seamlessly book your trips with our user-friendly platform.</p>
+        </div>
+        <div class="box">
+            <h3>Best Prices</h3>
+            <p>Get the best deals on flights, hotels, and activities.</p>
+        </div>
+        <div class="box">
+            <h3>24/7 Support</h3>
+            <p>Our support team is available around the clock to assist you.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>MADE by Travelease</p>
+    </footer>
+</body>
+</html>
